@@ -1,7 +1,7 @@
 from math import sqrt
 
 baddata = True
-while baddata == True:
+while baddata:
     try:
         a= int(input('Введите a: '))
         b= int(input('Введите b: '))
@@ -15,7 +15,7 @@ D= (b*b)-(4*a*c)
 if D>0:
 
     d = sqrt(D)
-    X1= ((-b)+d)/(2*a)
+    X1= ((-b) + d)/(2 * a)
     X2 = ((-b) - d) / (2 * a)
     print(f'Ураннение имеет два корня X1 = {X1}, X2 ={X2}. ')
 elif D==0:
